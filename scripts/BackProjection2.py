@@ -3,10 +3,10 @@ import numpy as np
 from matplotlib import pyplot as plt
 
 
-roi = cv2.imread('_2.png')
+roi = cv2.imread('..\\_2.png')
 hsv = cv2.cvtColor(roi, cv2.COLOR_BGR2HSV)
 
-target = cv2.imread('image\\1.png')
+target = cv2.imread('..\\image\\1.png')
 hsvt = cv2.cvtColor(target, cv2.COLOR_BGR2HSV)
 
 cv2.imshow("h", hsvt[:, :, 0])
